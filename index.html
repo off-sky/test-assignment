@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="Trial assignment for MaMa Creative Studio">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+      .profile-label, .profile-value {
+          display: inline-block;
+      }
+      .profile-label {
+          min-width: 100px;
+          font-size: 90%;
+          color: dimgray;
+      }
+      .profile-value {
+          min-width: 100px;
+          font-size: 100%;
+      }
+      .container {
+          width: 100%;
+          text-align: center;
+          padding: 10px 30px 30px 20px;
+      }
+      .data-block {
+         text-align: left;
+          margin: 0 auto;
+         max-width: 300px;
+      }
+      .page-title {
+          text-align: center;
+      }
+      .form-input {
+          width: 100%;
+          border: 0px;
+          border-bottom: solid 2px grey;
+          text-align: center;
+          font-size: 120%;
+      }
+      .form-label {
+          font-size: 90%;
+          color: dimgrey;
+      }
+      .input-field, .button-field, .profile-field {
+          margin: 10px 0px 10px 0px;
+      }
+      .button-field {
+          text-align: center;
+      }
+      .form-action-button-highlight, .form-action-button {
+          width: 100%;
+          padding-top: 10px;
+          padding-bottom: 10px;
+          cursor: pointer;
+      }
+      .form-action-button-highlight {
+          background-color: rgb(152, 204, 50);
+          color: white;
+          border: 0px;
+      }
+      .form-action-button {
+          background-color: white;
+          color: rgb(152, 204, 50);
+          border: 0px;
+      }
+  </style>
+<title>Trial Assignment</title>
+</head>
+<body ng-app="trialMaMaApp">
+    <div class="container">
+        <div ui-view="mainContent"></div>
+    </div>
+    <script src="https://www.gstatic.com/firebasejs/3.7.3/firebase.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+    <script src="js/angular-ui-router.min.js"></script>
+    <script src="https://cdn.firebase.com/libs/angularfire/0.9.0/angularfire.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/controllers.js"></script>
+    <script src="js/tests.js"></script>
+</body> 
+</html>

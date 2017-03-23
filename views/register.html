@@ -1,0 +1,44 @@
+<h3 class="page-title">Register</h3>
+<div class="data-block">
+    <form class="registerForm" name="registerForm" novalidate>
+        <div class="input-field">
+            <label class="form-label" for="firstName">First Name</label><br>
+           <input class="form-input" name="firstName" id="firstName" type="text" ng-model="newUser.firstName" required>
+       </div>
+        <div class="input-field">
+            <label class="form-label" for="lastName">Last Name</label><br>
+           <input class="form-input" name="lastName" id="lastName" type="text" ng-model="newUser.lastName" required>
+       </div>
+       <div class="input-field">
+           <label class="form-label" for="email">Email</label><br>
+           <input class="form-input" name="email" id="email" type="email" ng-model="newUser.email" required>
+       </div>
+        <div class="input-field">
+            <label class="form-label" for="password">Password</label><br>
+           <input class="form-input" name="password" id="password" type="password" ng-model="newUser.password" required>
+       </div>
+        <div class="input-field">
+            <label class="form-label" for="confirmPassword">Confirm Password</label><br>
+           <input class="form-input" name="confirmPassword" id="confirmPassword" type="password" ng-model="newUser.confPassword" required>
+       </div>
+        <div class="input-field">
+            <label class="form-label" for="age">Age</label><br>
+           <input class="form-input" name="age" id="age" type="number" ng-model="newUser.age" min="10" max="105">
+       </div>
+        <div class="input-field">
+            <label class="form-label" for="age">Country</label><br>
+           <input class="form-input" name="country" id="country" ng-model="newUser.country" type="text">
+       </div>
+        <div class="button-field">
+           <button class="form-action-button-highlight" ng-click="doRegister()">Register</button>
+       </div>
+        <div class="button-field">
+           <button ui-sref="app()" class="form-action-button">Log In</button>
+       </div>
+        <div class="input-field">
+           <div class="error-message" ng-if="showErrorMessage">
+                <p>{{errorMessage}}</p>
+           </div>
+       </div>
+    </form>
+    </div>

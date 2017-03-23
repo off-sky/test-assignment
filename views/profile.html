@@ -1,0 +1,25 @@
+<h3 class="page-title">Hello, {{user.firstName+' '+user.lastName}}</h3>
+   <div class="data-block">
+        <div class="profile-field">
+           <div class="profile-label">First Name</div>
+           <div class="profile-value">{{user.firstName}}</div>
+       </div>
+       <div class="profile-field">
+           <div class="profile-label">Last Name</div>
+           <div class="profile-value">{{user.lastName}}</div>
+       </div>
+       <div class="profile-field">
+           <div class="profile-label">Age</div>
+           <div class="profile-value">{{user.age}}</div>
+       </div>
+       <div class="profile-field">
+           <div class="profile-label">Country</div>
+           <div class="profile-value">{{user.country}}</div>
+       </div>
+        <div class="button-field">
+           <button class="form-action-button-highlight" ui-sref="app.edit({userId:uid})">EDIT</button>
+       </div>
+        <div class="button-field">
+           <button ui-sref="app()" class="form-action-button" ng-click="doLogOut()">LOGOUT</button>
+       </div>
+    </div>

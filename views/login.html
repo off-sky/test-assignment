@@ -1,0 +1,24 @@
+<h3 class="page-title">Welcome!</h3>
+ <div class="data-block">
+    <form class="loginForm" name="loginForm" novalidate>
+       <div class="input-field">
+           <label class="form-label" for="email">Email</label><br>
+           <input class="form-input" name="email" id="email" type="email" ng-model="candidate.email" required>
+       </div>
+        <div class="input-field">
+            <label class="form-label" for="password">Password</label><br>
+           <input class="form-input" name="password" id="password" type="password" ng-model="candidate.password" required>
+       </div>
+        <div class="input-field">
+           <button class="form-action-button-highlight" ng-click="doLogIn()">Log In</button>
+       </div>
+        <div class="button-field">
+           <button ui-sref="app.register()" class="form-action-button">Register</button>
+       </div>
+        <div class="button-field">
+           <div class="error-message" ng-if="showErrorMessage">
+                <p>{{errorMessage}}</p>
+           </div>
+       </div>
+    </form>
+</div>
